@@ -1,0 +1,46 @@
+# Variable
+
+{{test}}
+
+==>
+
+JsonText(TemplateVar)
+
+# Variable in array
+
+[{{test}}, {{test}}]
+
+==>
+
+JsonText(Array(TemplateVar,TemplateVar))
+
+# Variables as object keys
+
+{
+  {{test}}: "hello"
+}
+
+==>
+
+JsonText(Object(Property(PropertyName(TemplateVar), String)))
+
+# Variables as object values
+
+{
+  "foo": {{test}}
+}
+
+==>
+
+JsonText(Object(Property(PropertyName,TemplateVar)))
+
+# Variables as object values 2
+
+{
+  "test": {{test}},
+  "asdf": "321"
+}
+
+==>
+
+JsonText(Object(Property(PropertyName,TemplateVar), Property(PropertyName,String)))

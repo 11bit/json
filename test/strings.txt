@@ -29,3 +29,11 @@ JsonText(String)
 ==>
 
 JsonText(String)
+
+# String with curly brace
+
+"with{"
+
+==>
+
+JsonText(String)
