@@ -1,7 +1,10 @@
-# lezer-json
+# lezer-json-template
 
-This is a JSON grammar for the [lezer](https://lezer.codemirror.net/) parser system.
+Fork of a [JSON grammar](https://github.com/lezer-parser/json) for the [lezer](https://lezer.codemirror.net/) parser system with support of template variables
 
-Reference:
-- https://www.json.org/json-en.html
-- https://tools.ietf.org/html/rfc8259 (The latest IETF RFC – contains the latest full spec)
+```
+{
+    {{var_name}}: {{var_value}},
+    list: [{{param1}}, {{param2}}, {{param3}}]
+}
+```

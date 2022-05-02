@@ -1,7 +1,7 @@
 {
-  "name": "@lezer/json",
+  "name": "lezer-json-template",
   "version": "0.15.0",
-  "description": "lezer-based JSON grammar",
+  "description": "lezer-based JSON grammar with template variables support",
   "main": "dist/index.cjs",
   "type": "module",
   "exports": {
@@ -10,7 +10,7 @@
   },
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
-  "author": "Arun Srinivasan <rulfzid@gmail.com>",
+  "author": "Buryak Ivan <ivan.buryak@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@lezer/generator": "^0.15.0",
